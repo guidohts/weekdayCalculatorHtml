@@ -25,8 +25,12 @@
 
     <script>
         document.getElementById('meinFormular').addEventListener('submit', function(event) {
-            event.preventDefault(); // Verhindert das Standardmäßige Absenden des Formulars
+            event.preventDefault(); // Verhindert das standardmäßige Absenden des Formulars
 
+            // Lese den Wert des Datum-Eingabefelds
+            const dateInput = document.getElementById('datum');
+            const selectedDateString = dateInput.value;
+            
             // Hier könnte die Logik der Funktion stehen, die das Ergebnis ermittelt
             const ergebnisText = "Ergebnis";
 
